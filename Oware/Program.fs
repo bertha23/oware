@@ -79,7 +79,13 @@ let start position =
           StartingPosition = position}
     board
 
-let score board = failwith "Not implemented"
+let score board =
+    board.SouthPlayer.Score, board.NorthPlayer.Score
+    //let {Score = a} as Northplayer as board, {Score = b} as Southplayer as board =
+    //    b,a
+    // board, board with 
+    //|({NorthPlayer=Player=Score=v},{SouthPlayer=Player=score=b}) -> v,b 
+    //failwith "Not implemented"
 
 let gameState board = failwith "Not implemented"
 
