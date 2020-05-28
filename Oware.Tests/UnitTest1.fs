@@ -37,7 +37,7 @@ let ``Every house has 4 seeds in it at the start`` () =
 [<Test>]
 let ``When house 1 is used, seeds go to the other houses`` () =
     let board = start South |> useHouse 1
-    board |> hasSeedCount (0,5,5,5,5,4,4,4,4,4,4,4)
+    board |> hasSeedCount (0,5,5,5,5,4,4,4,4,4,4,4) 
 
 [<Test>]
 let ``When house 2 is used, seeds go to the other houses`` () =
